@@ -11,5 +11,6 @@ with(twoDays, lines(Date, Sub_metering_1))
 with(twoDays, lines(Date, Sub_metering_2, col = "red"))
 with(twoDays, lines(Date, Sub_metering_3, col = "blue"))
 
+
 #end plotting to png device
 dev.off()
