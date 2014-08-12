@@ -23,9 +23,13 @@ with(twoDays, lines(Date, Sub_metering_1))
 with(twoDays, lines(Date, Sub_metering_2, col = "red"))
 with(twoDays, lines(Date, Sub_metering_3, col = "blue"))
 
+legend("topright",lty=1, col=c("black","red","blue"),
+       legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),bty="n")
+
 #4th Plot: plot on second row, second col
 with(twoDays, plot(Date, Global_reactive_power, type = "l", 
 		   ylab = "Global_reactive_power", xlab = "datetime"))
+		   
 
 #end plotting to png device
 dev.off()
